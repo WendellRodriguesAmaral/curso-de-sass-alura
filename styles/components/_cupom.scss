@@ -31,7 +31,7 @@
         }
 
         &:hover, &:focus-within{
-            box-shadow: 1px 1px 8px 1px $cor-primaria;
+            box-shadow: 1px 1px 1px 1px $cor-secundaria;
             outline: none;
         }
     }
@@ -49,9 +49,14 @@
         font-weight: bold;
         cursor: pointer;
         border-radius: 5px;
+        opacity: .7;
 
         &:hover{
-            background-color:$cor-primaria;            
+            // background-color:$cor-primaria;       
+            opacity: 1;
+            transform:scale(1.05);
+            transition: transform .3s;
+
         }
     }
 }
